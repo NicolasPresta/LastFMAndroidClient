@@ -13,8 +13,7 @@ import rx.Observable;
  * Created by Presta on 08/03/2016.
  */
 public interface ILastFMApiService {
-
-    // Prueba de que este comentario de commitee
+    
     @GET(ApiConstants.URL_TOP_ARTIST)
     void getTopArtists(@Query(ApiConstants.PARAM_API_KEY) String key,Callback<TopArtistsResponse> serverResponse);
 
